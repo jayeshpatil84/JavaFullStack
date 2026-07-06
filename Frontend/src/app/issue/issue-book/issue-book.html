@@ -1,0 +1,73 @@
+<div class="container">
+
+  <mat-card>
+
+    <mat-card-title>Issue Book</mat-card-title>
+
+    <form [formGroup]="issueForm" (ngSubmit)="issueBook()">
+
+      <!-- User -->
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Select User</mat-label>
+
+        <mat-select formControlName="userId">
+
+          <mat-option *ngFor="let user of users" [value]="user.userId">
+
+            {{ user.fullName }}
+
+          </mat-option>
+
+        </mat-select>
+
+      </mat-form-field>
+
+      <!-- Book -->
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Select Book</mat-label>
+
+        <mat-select formControlName="bookId">
+
+          <mat-option *ngFor="let book of books" [value]="book.bookId">
+
+            {{ book.bookName }}
+
+          </mat-option>
+
+        </mat-select>
+
+      </mat-form-field>
+
+      <div class="button-container">
+
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit">
+
+          <mat-icon>library_books</mat-icon>
+
+          Issue Book
+
+        </button>
+
+        <button
+          mat-raised-button
+          color="warn"
+          type="reset">
+
+          Reset
+
+        </button>
+
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</div>

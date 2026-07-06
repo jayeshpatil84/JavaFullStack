@@ -1,0 +1,50 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Angular Material Theme */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1976d2;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Material Cards */
+.mat-mdc-card {
+    border-radius: 12px !important;
+}
+
+/* Material Toolbar */
+.mat-toolbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+/* Material Buttons */
+button {
+    cursor: pointer;
+}

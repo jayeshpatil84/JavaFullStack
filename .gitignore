@@ -1,0 +1,74 @@
+# ===========================
+# Spring Boot
+# ===========================
+HELP.md
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Angular
+# ===========================
+node_modules/
+.angular/
+.angular/cache/
+dist/
+out-tsc/
+coverage/
+
+# ===========================
+# Environment
+# ===========================
+.env
+.env.*
+
+# ===========================
+# Logs
+# ===========================
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ===========================
+# IDE
+# ===========================
+.vscode/
+.idea/
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+.c9/
+.history/
+
+# ===========================
+# NetBeans
+# ===========================
+nbproject/private/
+nbbuild/
+nbdist/
+
+# ===========================
+# Misc
+# ===========================
+tmp/
+.sass-cache/
+connect.lock
+typings/
+libpeerconnection.log
+testem.log
+__screenshots__/
+
+# ===========================
+# Operating System
+# ===========================
+.DS_Store
+Thumbs.db
+Desktop.ini

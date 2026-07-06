@@ -1,0 +1,77 @@
+<div class="login-container">
+
+  <mat-card class="login-card">
+
+    <div class="logo">
+
+      <mat-icon class="logo-icon">menu_book</mat-icon>
+
+      <h1>Library Management System</h1>
+
+      <p>Login to your account</p>
+
+    </div>
+
+    <form [formGroup]="loginForm">
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Email</mat-label>
+
+        <input
+          matInput
+          formControlName="email"
+          placeholder="Enter Email">
+
+        <mat-icon matSuffix>email</mat-icon>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Password</mat-label>
+
+        <input
+          matInput
+          [type]="hide ? 'password' : 'text'"
+          formControlName="password">
+
+        <button
+          mat-icon-button
+          matSuffix
+          type="button"
+          (click)="hide=!hide">
+
+          <mat-icon>
+
+            {{hide ? 'visibility_off' : 'visibility'}}
+
+          </mat-icon>
+
+        </button>
+
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="login-btn"
+        (click)="login()">
+
+        Login
+
+      </button>
+
+    </form>
+
+    <p class="register-link">
+
+      Don't have an account?
+
+      <a routerLink="/register">Register</a>
+
+    </p>
+
+  </mat-card>
+
+</div>
